@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+  font-size:19px;
+  background-color: 
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: auto;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color:black;
+}
+button{
+    border-radius:4px;
+    padding:10px 24px;
+    background-color:black;
+    color: #ccc;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Secret message App</h2>
+
+<div class="container">
+  <p>https%3A%2F%2Fw3schools.com%2Fmy%20test.asp%3Fname%3Dst%C3%A5le%26car%3Dsaab</p>
+  <span class="time-right">11:00</span>
+  <button>Decode</button>
+</div>
+
+<div class="container darker">
+  <p>Hey! I'm fine. Thanks for asking!</p>
+  <span class="time-right">11:01</span>
+  <button>Encode</button>
+</div>
+
+<div class="container">
+  <p>https%3A%2F%2Fw3schools.com%2Fmy%20test.asp%3Fname%3Dst%C3%A5le%26car%3Dsaab</p>
+  <span class="time-right">11:02</span>
+  <button>Decode</button>
+</div>
+
+<div class="container darker">
+  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+  <span class="time-right">11:05</span>
+  <button>Encode</button>
+</div>
+
+</body>
+</html>
